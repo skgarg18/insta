@@ -32,6 +32,7 @@ header{
 
 .username,
 .password{
+    color: black;
     border: 1px rgb(180, 176, 176) solid;
     width: 250px;
     height: 15px;
@@ -48,12 +49,14 @@ header{
     position: absolute;
     font-size: 1rem;
     transform: translate(-139%, 55%);
+    transition: 1s;
 }
 
 .passspan{
     position: absolute;
     font-size: 1rem;
     transform: translate(-414%,49%);
+    transition: 1s;
 }
 
 .username:focus + .userspan ,
@@ -364,5 +367,41 @@ footer{
     #phone{
         display: none;
     }
+
+    .userspan{
+        width: 500px;
+        transform: translate(-84%, 60%);
+    }
+
+.username:focus + .userspan ,
+.username:valid + .userspan {
+    font-size: 0.8rem;
+    transform: translate(-87%,-02%);
+}
+
+}
+   
+@media screen and (width:400px){
+
+
+    #phone{
+        display: none;
+    }
+
+    .passspan{
+        transform: translate(-414%,59%);
+    }
+    
+    .userspan{
+        width: 500px;
+        transform: translate(-84%, 60%);
+    }
+
+.username:focus + .userspan ,
+.username:valid + .userspan {
+    font-size: 0.8rem;
+    transform: translate(-7%,-02%);
+}
+
 }
     
