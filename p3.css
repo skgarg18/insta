@@ -32,6 +32,7 @@ header{
 
 .username,
 .password{
+    color: black;
     border: 1px rgb(180, 176, 176) solid;
     width: 250px;
     height: 15px;
@@ -48,12 +49,14 @@ header{
     position: absolute;
     font-size: 1rem;
     transform: translate(-139%, 55%);
+    transition: 1s;
 }
 
 .passspan{
     position: absolute;
     font-size: 1rem;
     transform: translate(-414%,49%);
+    transition: 1s;
 }
 
 .username:focus + .userspan ,
